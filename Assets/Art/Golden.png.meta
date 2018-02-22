@@ -1,0 +1,580 @@
+fileFormatVersion: 2
+guid: ccdc75e18f0f7ac42bad9e52b9e5a715
+timeCreated: 1483618736
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Golden_0
+    21300002: Golden_1
+    21300004: Golden_2
+    21300006: Golden_3
+    21300008: Golden_4
+    21300010: Golden_5
+    21300012: Golden_6
+    21300014: Golden_7
+    21300016: Golden_8
+    21300018: Golden_9
+    21300020: Golden_10
+    21300022: Golden_11
+    21300024: Golden_12
+    21300026: Golden_13
+    21300028: Golden_14
+    21300030: Golden_15
+    21300032: Golden_16
+    21300034: Golden_17
+    21300036: Golden_18
+    21300038: Golden_19
+    21300040: Golden_20
+    21300042: Golden_21
+    21300044: Golden_22
+    21300046: Golden_23
+    21300048: Golden_24
+    21300050: Golden_25
+    21300052: Golden_26
+    21300054: Golden_27
+    21300056: Golden_28
+    21300058: Golden_29
+    21300060: Golden_30
+    21300062: Golden_31
+    21300064: Golden_32
+    21300066: Golden_33
+    21300068: Golden_34
+    21300070: Golden_35
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Golden_0
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1144
+        width: 182
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_1
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1143
+        width: 163
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_2
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 1142
+        width: 116
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_3
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 1144
+        width: 44
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_4
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1143
+        width: 118
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_5
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 1144
+        width: 161
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_6
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 1143
+        width: 184
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_7
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 897
+        width: 181
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_8
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 897
+        width: 157
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_9
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 897
+        width: 115
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_10
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 897
+        width: 36
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_11
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 897
+        width: 115
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_12
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 897
+        width: 157
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_13
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 897
+        width: 181
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_14
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 647
+        width: 182
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_15
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 647
+        width: 160
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_16
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 647
+        width: 117
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_17
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 647
+        width: 40
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_18
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 647
+        width: 119
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_19
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 648
+        width: 161
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_20
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 649
+        width: 187
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_21
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 402
+        width: 181
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_22
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 402
+        width: 157
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_23
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 402
+        width: 115
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_24
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 402
+        width: 36
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_25
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 402
+        width: 115
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_26
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 402
+        width: 157
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_27
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 402
+        width: 181
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_28
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 153
+        width: 183
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_29
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 151
+        width: 160
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_30
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 154
+        width: 116
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_31
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 151
+        width: 43
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_32
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 152
+        width: 119
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_33
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 154
+        width: 159
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_34
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 154
+        width: 188
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Golden_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1300
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
