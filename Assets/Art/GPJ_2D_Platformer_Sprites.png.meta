@@ -1,10 +1,11 @@
 fileFormatVersion: 2
 guid: ba71597df81b60b4697e9065731e9827
-timeCreated: 1519213729
+timeCreated: 1519382498
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: munition
+    21300002: munition_en
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -91,6 +92,20 @@ TextureImporter:
         y: 95
         width: 10
         height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: munition_en
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 94
+        width: 11
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

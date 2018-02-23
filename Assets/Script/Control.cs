@@ -54,6 +54,7 @@ public class Control : MonoBehaviour
 		myR = GetComponent<Rigidbody2D>();
 		GetComponent<Rigidbody2D>().freezeRotation = true;
 		ani = GetComponent<Animator>();
+		gameObject.GetComponent<CircleCollider2D>().enabled = false;
 	}
 
 	// Update is called once per frame
@@ -121,6 +122,7 @@ public class Control : MonoBehaviour
 			sildeTime = 1f;
 			ani.SetBool("Slide", true);
 			gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
+			gameObject.GetComponent<CircleCollider2D>().enabled = true;
 			slide = true;
 		}
 		if (slide)
@@ -131,6 +133,7 @@ public class Control : MonoBehaviour
 				slide = false;
 				ani.SetBool("Slide", false);
 				gameObject.GetComponent<CapsuleCollider2D>().enabled = true;
+				gameObject.GetComponent<CircleCollider2D>().enabled = false;
 			}
 		}
 
@@ -158,7 +161,7 @@ public class Control : MonoBehaviour
 		if (isMelee)
 		{
 			timeMelee += Time.deltaTime;
-			if (timeMelee > 1.1f)
+			if (timeMelee > 1.08f)
 			{
 				ani.SetBool("melee", isMelee = false);
 				melee.SetActive(false);

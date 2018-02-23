@@ -14,7 +14,6 @@ public class LevelManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
 	}
     public void Respawn()
     {
@@ -28,14 +27,14 @@ public class LevelManager : MonoBehaviour {
         Player.GetComponent<Renderer>().enabled = false;
         Player.GetComponent<CircleCollider2D>().enabled = false;
         Player.GetComponent<CapsuleCollider2D>().enabled = false;
-        Debug.Log("Player respawn");
-        yield return new WaitForSeconds(delay);
 		pos = currentCP.transform.position;
-		//UnityEngine.SceneManagement.SceneManager.LoadScene("test1");
+		Debug.Log("Player respawn");
+        yield return new WaitForSeconds(delay);
+		//UnityEngine.SceneManagement.SceneManager.LoadScene("Level_01");
 		Player.transform.position = pos;
         Player.enabled = true;
         Player.GetComponent<Renderer>().enabled = true;
-        Player.GetComponent<CircleCollider2D>().enabled = true;
+        Player.GetComponent<CircleCollider2D>().enabled = false;
         Player.GetComponent<CapsuleCollider2D>().enabled = true;
     }
 }

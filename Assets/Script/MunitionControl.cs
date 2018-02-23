@@ -1,5 +1,5 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class MunitionControl : MonoBehaviour {
@@ -23,7 +23,7 @@ public class MunitionControl : MonoBehaviour {
 	}
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if(other.name!="Wall" && other.tag!="CheckPoint" && other.name != "MainCh" && other.name !="melee")
+		if (other.name != "Wall" && other.tag != "CheckPoint" && other.name != "MainCh" && other.name != "melee")
 		{
 			var clone = Instantiate(impactEffect, transform.position, transform.rotation);
 			Destroy(gameObject);

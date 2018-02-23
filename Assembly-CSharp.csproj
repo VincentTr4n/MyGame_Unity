@@ -60,7 +60,9 @@
      <Compile Include="Assets\Script\FollowPlayer.cs" />
      <Compile Include="Assets\Script\HurtEnemyContact.cs" />
      <Compile Include="Assets\Script\KillPlayer.cs" />
+     <Compile Include="Assets\Script\LevelLoader.cs" />
      <Compile Include="Assets\Script\LevelManager.cs" />
+     <Compile Include="Assets\Script\LifeManager.cs" />
      <Compile Include="Assets\Script\MainMenu.cs" />
      <Compile Include="Assets\Script\MovementSike.cs" />
      <Compile Include="Assets\Script\MunitionControl.cs" />

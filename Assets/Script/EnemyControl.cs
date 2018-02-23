@@ -13,6 +13,8 @@ public class EnemyControl : MonoBehaviour
 	float wallRadius = 0.2f;
 	public LayerMask WhatIsWall;
 
+	public bool onlyMoveLeft;
+
 
 	private Animator ani;
 	// Use this for initialization
@@ -30,7 +32,7 @@ public class EnemyControl : MonoBehaviour
 		if (hittingWall) moveRight = !moveRight;
 
 		var rigidbody2D = GetComponent<Rigidbody2D>();
-		if (moveRight)
+		if (moveRight && !onlyMoveLeft)
 		{
 			rigidbody2D.velocity = new Vector2(moveSpeed, rigidbody2D.velocity.y);
 			if (facing) Flip();
