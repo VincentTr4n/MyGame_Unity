@@ -70,6 +70,7 @@
      <Compile Include="Assets\Script\PickUp.cs" />
      <Compile Include="Assets\Script\Saw.cs" />
      <Compile Include="Assets\Script\Score.cs" />
+     <Compile Include="Assets\Script\StuffUpCheck.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

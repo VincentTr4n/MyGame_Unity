@@ -36,6 +36,7 @@ public class KillPlayer : MonoBehaviour
 			{
 				liftManager.GameOverSound.Play();
 				pause.ShowScreenGO();
+				Time.timeScale = 1f;
 			}
 			else
 			{

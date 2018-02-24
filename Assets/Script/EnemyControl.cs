@@ -8,10 +8,14 @@ public class EnemyControl : MonoBehaviour
 	public float moveSpeed;
 	public bool moveRight;
 
+	bool hittingBlock = false;
 	bool hittingWall = false;
 	public Transform wallCheck;
 	float wallRadius = 0.2f;
+	public LayerMask WhatIsBlock;
 	public LayerMask WhatIsWall;
+
+	public bool canJump;
 
 	public bool onlyMoveLeft;
 
@@ -28,8 +32,9 @@ public class EnemyControl : MonoBehaviour
 	void Update()
 	{
 
+		hittingBlock = Physics2D.OverlapCircle(wallCheck.position, wallRadius, WhatIsBlock);
 		hittingWall = Physics2D.OverlapCircle(wallCheck.position, wallRadius, WhatIsWall);
-		if (hittingWall) moveRight = !moveRight;
+		if (hittingBlock) moveRight = !moveRight;
 
 		var rigidbody2D = GetComponent<Rigidbody2D>();
 		if (moveRight && !onlyMoveLeft)
@@ -47,6 +52,12 @@ public class EnemyControl : MonoBehaviour
 			slideTime1 = 1f;
 			ani.SetBool("attack", true);
 			att = 0;
+		}
+		if (hittingWall && canJump)
+		{
+			GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 250));
+			GetComponent<Rigidbody2D>().velocity = new Vector2(0, 4);
+			hittingWall = false;
 		}
 		//else if (att==0)
 		//{
@@ -68,9 +79,9 @@ public class EnemyControl : MonoBehaviour
 	int att = -1;
 	float slideTime1;
 	//float MaxSlideTime = 1.5f;
-	void OnTriggerEnter2D(Collider2D collision)
+	void OnTriggerEnter2D(Collider2D other)
 	{
-		if (collision.name == "MainCh")
+		if (other.name == "MainCh")
 		{
 			att = 1;
 			Debug.Log("Kill Player!!!" + att);
