@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: ba71597df81b60b4697e9065731e9827
-timeCreated: 1519461824
+timeCreated: 1519474163
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -10,6 +10,7 @@ TextureImporter:
     21300006: GPJ_2D_Platformer_Sprites_1
     21300008: GPJ_2D_Platformer_Sprites_2
     21300010: GPJ_2D_Platformer_Sprites_3
+    21300012: Enemy_Fly01
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -97,7 +98,7 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -110,6 +111,20 @@ TextureImporter:
         y: 95
         width: 11
         height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Enemy_Fly01
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
