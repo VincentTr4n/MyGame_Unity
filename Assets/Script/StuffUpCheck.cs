@@ -4,11 +4,18 @@ using UnityEngine;
 
 public class StuffUpCheck : MonoBehaviour
 {
-
+    
+    // Enemy object 
 	public GameObject stuffUp;
-	public GameObject renerate;
+    
+    // Position to generate clone stuff
+	public GameObject generate;
+
 	GameObject stuffClone;
+ 
 	bool onTrigger;
+    
+    // Maximum time respawn clone 
 	public float maxTime;
 	float timeLife;
 
@@ -26,9 +33,14 @@ public class StuffUpCheck : MonoBehaviour
 		if (stuffClone != null && timeLife > maxTime)
 		{
 			Destroy(stuffClone);
+            Debug.Log("Stuff Clone destroyed");
+            
+            // Reset values
 			onTrigger = false;
 			timeLife = 0f;
 		}
+
+        // Move up stuff (Clone)
 		if (onTrigger && stuffClone != null)
 		{
 			stuffClone.transform.Translate(Vector3.up * 100f * Time.deltaTime);
@@ -39,7 +51,8 @@ public class StuffUpCheck : MonoBehaviour
 	{
 		if (other.name == "MainCh" && !onTrigger)
 		{
-			stuffClone = Instantiate(stuffUp, renerate.transform.position, renerate.transform.rotation);
+            // Respawn clone
+			stuffClone = Instantiate(stuffUp, generate.transform.position, generate.transform.rotation);
 			timeLife = 0f;
 			onTrigger = true;
 		}

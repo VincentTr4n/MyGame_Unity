@@ -18,13 +18,13 @@ public class EnemyJump : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
         grounded1 = Physics2D.OverlapCircle(groundCheck1.position, groundRadius1, WhatIsGround1);
-        if (grounded1)
-        {
-            JumpCheck = !JumpCheck;
-        }
-        if (JumpCheck)
-            transform.Translate(Vector3.up * JumpH * Time.deltaTime);
+
+        if (grounded1) JumpCheck = !JumpCheck;
+
+        // Move up or down game object
+        if (JumpCheck) transform.Translate(Vector3.up * JumpH * Time.deltaTime);
         else transform.Translate(Vector3.down * JumpH * Time.deltaTime);
     }
 }

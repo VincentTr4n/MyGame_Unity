@@ -8,6 +8,7 @@ public class MainMenu : MonoBehaviour
 
 	public void PlayGame()
 	{
+        // New game only start with level 01
 		SceneManager.LoadScene("Level_01");
 	}
 

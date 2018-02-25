@@ -29,7 +29,7 @@ public class EnemyAI : MonoBehaviour
 	[HideInInspector]
 	public bool pathIsEnded = false;
 
-	// max distance from AI to a waypoint for it to continue to the next waypoint
+	// Max distance from AI to a waypoint for it to continue to the next waypoint
 	public float nextWayPointDis = 3;
 
 	// The waypoint we are currently moving towards
@@ -68,6 +68,7 @@ public class EnemyAI : MonoBehaviour
 		Debug.Log("We got a path, Did it have an error?" + p.error);
 		if (!p.error)
 		{
+            // Sava path and free currentWayPoint
 			path = p;
 			currentWayPoint = 0;
 		}

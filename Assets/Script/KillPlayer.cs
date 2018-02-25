@@ -6,6 +6,8 @@ public class KillPlayer : MonoBehaviour
 {
 
 	public LevelManager levelM;
+
+    // Play audio 
 	public AudioSource theme;
 	public AudioSource source;
 	public AudioClip sound;
@@ -30,8 +32,13 @@ public class KillPlayer : MonoBehaviour
 		if (other.name == "MainCh")
 		{
 			theme.Stop();
+
+            // Respawn player if ontrigger event called
 			levelM.Respawn();
+
 			liftManager.TakeLife();
+
+            // game over when lift count <= 0
 			if (liftManager.LifeCounter <= 0)
 			{
 				liftManager.GameOverSound.Play();

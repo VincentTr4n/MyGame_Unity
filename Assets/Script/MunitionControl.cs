@@ -6,18 +6,26 @@ public class MunitionControl : MonoBehaviour {
 
 	public float speed;
 	public Control player;
+    
+    // Death effect for destroy enemy
 	public GameObject enemyDeathEffect;
+
 	public GameObject impactEffect;
+
+    // Damage given to take 
 	public int damage;
 
 	// Use this for initialization
 	void Start () {
 		player = FindObjectOfType<Control>();
+
+        // Redirect munition
 		if (player.transform.localScale.x < 0) speed *= -1f;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
 		var rb = GetComponent<Rigidbody2D>();
 		rb.velocity = new Vector2(speed, rb.velocity.y);
 	}
@@ -36,6 +44,8 @@ public class MunitionControl : MonoBehaviour {
 			other.GetComponent<EnemyHealthManager>().GiveDamage(damage);
 		}
 	}
+
+    // Delete clone effect 
 	void DeleteClones()
 	{
 		var clones = GameObject.FindGameObjectsWithTag("EffectClone");

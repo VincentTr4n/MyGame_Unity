@@ -67,9 +67,11 @@ public class Control : MonoBehaviour
 	void Update()
 	{
 
+        // Set animation
 		ani.SetBool("Ground", grounded);
 		ani.SetFloat("vSpeed", myR.velocity.y);
-		//Monvement;
+		
+        //Monvement
 		float move = Input.GetAxis("Horizontal");
 
 		if (knockBackCount <= 0)
@@ -86,30 +88,25 @@ public class Control : MonoBehaviour
 			}
 		} else
 		{
+            // Knockback player when hurt enemy
 			if (knockBackRight) GetComponent<Rigidbody2D>().velocity = new Vector2(-knockBack, knockBack);
 			if(!knockBackRight) GetComponent<Rigidbody2D>().velocity = new Vector2(knockBack, knockBack);
 			knockBackCount -= Time.deltaTime;
 		}
 
 		//
-		//animation;
+		//animation run
 
 		ani.SetFloat("Speed", Mathf.Abs(move));
 
 		//
 		//Flip character;
 
-		if (move < 0 && facing)
-		{
-			Flip();
-		}
-		else if (move > 0 && !facing)
-		{
-			Flip();
-		}
+		if (move < 0 && facing) Flip();
+        else if (move > 0 && !facing) Flip();
 
-
-		if (grounded && Input.GetKeyDown(KeyCode.Space))
+        // Jump with space key
+        if (grounded && Input.GetKeyDown(KeyCode.Space))
 		{
 			ani.SetBool("Ground", false);
 			myR.AddForce(new Vector2(0, JumpF));
@@ -117,6 +114,7 @@ public class Control : MonoBehaviour
 			GetComponent<AudioSource>().Play();
 		}
 
+        // Slide with left control key
 		if (Input.GetKeyDown(KeyCode.LeftControl) && !slide)
 		{
 			sildeTime = 1f;
@@ -127,6 +125,7 @@ public class Control : MonoBehaviour
 		}
 		if (slide)
 		{
+            // time for slide
 			sildeTime += Time.deltaTime;
 			if (sildeTime > MaxSildeTime)
 			{
@@ -137,6 +136,7 @@ public class Control : MonoBehaviour
 			}
 		}
 
+        // Shoot with T key
 		if (Input.GetKeyDown(KeyCode.T) && !attacking)
 		{
 			Instantiate(munition, firePoint.position, firePoint.rotation);
@@ -146,11 +146,14 @@ public class Control : MonoBehaviour
 
 		if (attacking)
 		{
+            // Time delay shotting
 			attTime += Time.deltaTime;
 			if (attTime > 1.2f) ani.SetBool("shoot", attacking = false);
 		}
+
 		//ani.SetBool("shoot", false);
 
+        // Melee with F key
 		if (Input.GetKeyDown(KeyCode.F) && !isMelee)
 		{
 			ani.SetBool("melee", isMelee = true);
@@ -160,6 +163,7 @@ public class Control : MonoBehaviour
 
 		if (isMelee)
 		{
+            // Time delay melee attacking
 			timeMelee += Time.deltaTime;
 			if (timeMelee > 1.08f)
 			{

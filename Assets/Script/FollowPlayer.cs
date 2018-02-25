@@ -3,8 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class FollowPlayer : MonoBehaviour {
-    //following target
+
+    // Following target
     public Transform target;
+
+    // Values support for Enemy follow player 
+    // isCammer = false -> Enemy, not camera
 	public bool isCamera;
 	public GameObject impactEffect;
 
@@ -12,6 +16,7 @@ public class FollowPlayer : MonoBehaviour {
     public float Time = .15f;
     void FixedUpdate()
     {
+        // Move game object follow the target
         Vector3 tPosition = target.position;
         tPosition.z = transform.position.z;
         transform.position = Vector3.SmoothDamp(transform.position, tPosition, ref v, Time);
@@ -25,6 +30,8 @@ public class FollowPlayer : MonoBehaviour {
 			DeleteClones();
 		}
 	}
+
+    // Delete clone object for optimize memory
 	void DeleteClones()
 	{
 		var clones = GameObject.FindGameObjectsWithTag("EffectClone");

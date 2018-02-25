@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MovementSike : MonoBehaviour {
+
     bool facing = true;
+
     // Use this for initialization
     public float speed;
     public bool moveR;

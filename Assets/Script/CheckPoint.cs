@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CheckPoint : MonoBehaviour {
+
+    // 
+    // Levem manager object for save current player
     public LevelManager levelM;
+
 	// Use this for initialization
 	void Start () {
         levelM = FindObjectOfType<LevelManager>();
@@ -17,6 +21,7 @@ public class CheckPoint : MonoBehaviour {
     {
         if (collision.name == "MainCh")
         {
+            // Saved
             levelM.currentCP = gameObject;
             Debug.Log("Actived CheckPoint" + transform.position);
         }

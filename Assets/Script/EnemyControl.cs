@@ -4,19 +4,25 @@ using UnityEngine;
 
 public class EnemyControl : MonoBehaviour
 {
+    // Check for flip
 	private bool facing = true;
 	public float moveSpeed;
 	public bool moveRight;
 
+    // Check hitting the boleck or wall
 	bool hittingBlock = false;
 	bool hittingWall = false;
+
+
 	public Transform wallCheck;
 	float wallRadius = 0.2f;
 	public LayerMask WhatIsBlock;
 	public LayerMask WhatIsWall;
 
+    // Set for enemy can jump if value = true
 	public bool canJump;
 
+    // Set enemy  only move to left 
 	public bool onlyMoveLeft;
 
 
@@ -31,12 +37,14 @@ public class EnemyControl : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-
+        // if wall check overlap Block or Wall value return true
 		hittingBlock = Physics2D.OverlapCircle(wallCheck.position, wallRadius, WhatIsBlock);
 		hittingWall = Physics2D.OverlapCircle(wallCheck.position, wallRadius, WhatIsWall);
+
 		if (hittingBlock) moveRight = !moveRight;
 
 		var rigidbody2D = GetComponent<Rigidbody2D>();
+
 		if (moveRight && !onlyMoveLeft)
 		{
 			rigidbody2D.velocity = new Vector2(moveSpeed, rigidbody2D.velocity.y);
@@ -59,6 +67,7 @@ public class EnemyControl : MonoBehaviour
 			GetComponent<Rigidbody2D>().velocity = new Vector2(0, 4);
 			hittingWall = false;
 		}
+
 		//else if (att==0)
 		//{
 		//	slideTime += Time.deltaTime;
@@ -69,6 +78,8 @@ public class EnemyControl : MonoBehaviour
 		//	}
 		//}
 	}
+
+    // Flip face object function
 	void Flip()
 	{
 		facing = !facing;
