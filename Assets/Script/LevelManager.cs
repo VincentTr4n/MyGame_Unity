@@ -8,7 +8,7 @@ public class LevelManager : MonoBehaviour {
     public GameObject currentCP;
 
     // Player Controlller
-    private Control Player;
+    private Control player;
 
     // DeathEffect
     public GameObject DeathEffect;
@@ -17,7 +17,7 @@ public class LevelManager : MonoBehaviour {
     public float delay;
 	// Use this for initialization
 	void Start () {
-        Player = FindObjectOfType<Control>();
+        player = FindObjectOfType<Control>();
 	}
 	
 	// Update is called once per frame
@@ -32,13 +32,13 @@ public class LevelManager : MonoBehaviour {
     // The function respawn player
     public IEnumerator FixedRespawn()
     {
-        Instantiate(DeathEffect, Player.transform.position, Player.transform.rotation);
+        Instantiate(DeathEffect, player.transform.position, player.transform.rotation);
         
         // Hide player 
-        Player.enabled = false;
-        Player.GetComponent<Renderer>().enabled = false;
-        Player.GetComponent<CircleCollider2D>().enabled = false;
-        Player.GetComponent<CapsuleCollider2D>().enabled = false;
+        player.enabled = false;
+        player.GetComponent<Renderer>().enabled = false;
+        player.GetComponent<CircleCollider2D>().enabled = false;
+        player.GetComponent<CapsuleCollider2D>().enabled = false;
 		pos = currentCP.transform.position;
 		Debug.Log("Player respawn");
 
@@ -46,11 +46,11 @@ public class LevelManager : MonoBehaviour {
 		//UnityEngine.SceneManagement.SceneManager.LoadScene("Level_01");
 
         // move the player to positon saved
-		Player.transform.position = pos;
-        Player.enabled = true;
+		player.transform.position = pos;
+        player.enabled = true;
         // Show player
-        Player.GetComponent<Renderer>().enabled = true;
-        Player.GetComponent<CircleCollider2D>().enabled = false;
-        Player.GetComponent<CapsuleCollider2D>().enabled = true;
+        player.GetComponent<Renderer>().enabled = true;
+        player.GetComponent<CircleCollider2D>().enabled = false;
+        player.GetComponent<CapsuleCollider2D>().enabled = true;
     }
 }

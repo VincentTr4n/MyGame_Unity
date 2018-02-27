@@ -37,7 +37,7 @@ public class MunitionControl : MonoBehaviour {
 			Destroy(gameObject);
 			DeleteClones();
 		}
-		if (other.tag == "Enemy")
+		if (other.tag == "Enemy" || other.tag== "FlyEnemy")
 		{
 			//Instantiate(enemyDeathEffect, other.transform.position, other.transform.rotation);
 			//Destroy(other.gameObject);
