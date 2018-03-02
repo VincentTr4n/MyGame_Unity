@@ -15,6 +15,9 @@ public class LevelManager : MonoBehaviour {
 
     // Time delay to respawn
     public float delay;
+
+    public string currLevel;
+
 	// Use this for initialization
 	void Start () {
         player = FindObjectOfType<Control>();
@@ -27,30 +30,36 @@ public class LevelManager : MonoBehaviour {
     {
         StartCoroutine("FixedRespawn");
     }
-	Vector3 pos { get; set; }
 
     // The function respawn player
     public IEnumerator FixedRespawn()
     {
         Instantiate(DeathEffect, player.transform.position, player.transform.rotation);
-        
+
         // Hide player 
         player.enabled = false;
         player.GetComponent<Renderer>().enabled = false;
         player.GetComponent<CircleCollider2D>().enabled = false;
         player.GetComponent<CapsuleCollider2D>().enabled = false;
-		pos = currentCP.transform.position;
-		Debug.Log("Player respawn");
+        //var pos = currentCP.transform.position;
+
+        //      // Save player position
+        //      PlayerPrefs.SetFloat("playerX", pos.x);
+        //      PlayerPrefs.SetFloat("playerY", pos.y);
+        //      PlayerPrefs.SetFloat("playerZ", pos.z);
+
+        Debug.Log("Player respawn");
 
         yield return new WaitForSeconds(delay);
-		//UnityEngine.SceneManagement.SceneManager.LoadScene("Level_01");
+		UnityEngine.SceneManagement.SceneManager.LoadScene(currLevel);
 
         // move the player to positon saved
-		player.transform.position = pos;
-        player.enabled = true;
-        // Show player
-        player.GetComponent<Renderer>().enabled = true;
-        player.GetComponent<CircleCollider2D>().enabled = false;
-        player.GetComponent<CapsuleCollider2D>().enabled = true;
+        GameObject.FindGameObjectWithTag("Player").transform.position = new Vector3(-16.37f, -1.64f, 0f);
+
+        //player.enabled = true;
+        //// Show player
+        //player.GetComponent<Renderer>().enabled = true;
+        //player.GetComponent<CircleCollider2D>().enabled = false;
+        //player.GetComponent<CapsuleCollider2D>().enabled = true;
     }
 }
