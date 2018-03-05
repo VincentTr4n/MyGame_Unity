@@ -41,7 +41,7 @@ public class LevelManager : MonoBehaviour {
         player.GetComponent<Renderer>().enabled = false;
         player.GetComponent<CircleCollider2D>().enabled = false;
         player.GetComponent<CapsuleCollider2D>().enabled = false;
-        //var pos = currentCP.transform.position;
+        var pos = currentCP.transform.position;
 
         //      // Save player position
         //      PlayerPrefs.SetFloat("playerX", pos.x);
@@ -51,15 +51,16 @@ public class LevelManager : MonoBehaviour {
         Debug.Log("Player respawn");
 
         yield return new WaitForSeconds(delay);
-		UnityEngine.SceneManagement.SceneManager.LoadScene(currLevel);
+        //UnityEngine.SceneManagement.SceneManager.LoadScene(currLevel);
 
         // move the player to positon saved
-        GameObject.FindGameObjectWithTag("Player").transform.position = new Vector3(-16.37f, -1.64f, 0f);
+        //GameObject.FindGameObjectWithTag("Player").transform.position = new Vector3(-16.37f, -1.64f, 0f);
 
-        //player.enabled = true;
-        //// Show player
-        //player.GetComponent<Renderer>().enabled = true;
-        //player.GetComponent<CircleCollider2D>().enabled = false;
-        //player.GetComponent<CapsuleCollider2D>().enabled = true;
+        player.transform.position = pos;
+        player.enabled = true;
+        // Show player
+        player.GetComponent<Renderer>().enabled = true;
+        player.GetComponent<CircleCollider2D>().enabled = false;
+        player.GetComponent<CapsuleCollider2D>().enabled = true;
     }
 }

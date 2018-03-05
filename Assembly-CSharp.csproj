@@ -162,6 +162,7 @@
      <Compile Include="Assets\Script\CheckPoint.cs" />
      <Compile Include="Assets\Script\Control.cs" />
      <Compile Include="Assets\Script\DestroyEnemy.cs" />
+     <Compile Include="Assets\Script\EndGenEnemy.cs" />
      <Compile Include="Assets\Script\EnemyAI.cs" />
      <Compile Include="Assets\Script\EnemyControl.cs" />
      <Compile Include="Assets\Script\EnemyHealthManager.cs" />
@@ -182,6 +183,7 @@
      <Compile Include="Assets\Script\PickUp.cs" />
      <Compile Include="Assets\Script\Saw.cs" />
      <Compile Include="Assets\Script\Score.cs" />
+     <Compile Include="Assets\Script\StartGenEnemy.cs" />
      <Compile Include="Assets\Script\StuffUpCheck.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />

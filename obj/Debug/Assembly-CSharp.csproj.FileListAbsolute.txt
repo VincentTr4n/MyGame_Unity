@@ -32,3 +32,4 @@ D:\My favorite\MyProject\MyMario\Temp\bin\Debug\UnityEngine.HoloLens.xml
 D:\My favorite\MyProject\MyMario\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 D:\My favorite\MyProject\MyMario\obj\Debug\Assembly-CSharp.dll
 D:\My favorite\MyProject\MyMario\obj\Debug\Assembly-CSharp.pdb
+D:\My favorite\MyProject\MyMario\Temp\bin\Debug\Pathfinding.Ionic.Zip.Reduced.dll
