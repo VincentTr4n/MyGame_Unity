@@ -25,14 +25,16 @@ public class EnemyControl : MonoBehaviour
     // Set enemy  only move to left 
 	public bool onlyMoveLeft;
 
+    Rigidbody2D rigidbody2D;
 
-	private Animator ani;
+    private Animator ani;
 	// Use this for initialization
 	void Start()
 	{
 		GetComponent<Rigidbody2D>().freezeRotation = true;
 		ani = GetComponent<Animator>();
-	}
+        rigidbody2D = GetComponent<Rigidbody2D>();
+    }
 
 	// Update is called once per frame
 	void Update()
@@ -42,8 +44,6 @@ public class EnemyControl : MonoBehaviour
 		hittingWall = Physics2D.OverlapCircle(wallCheck.position, wallRadius, WhatIsWall);
 
 		if (hittingBlock) moveRight = !moveRight;
-
-		var rigidbody2D = GetComponent<Rigidbody2D>();
 
 		if (moveRight && !onlyMoveLeft)
 		{
